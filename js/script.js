@@ -15,18 +15,24 @@ const bicicletta = [
     }
 ];
 
-let pesoMin = bicicletta[0];
+let biciclettaMin = bicicletta[0];
 
 for (let i = 0; i < bicicletta.length; i++) {
     console.log(bicicletta[i]);
-    if (bicicletta[i].peso < pesoMin.peso) {
-        pesoMin = bicicletta[i];
+    if (bicicletta[i].peso < biciclettaMin.peso) {
+        biciclettaMin = bicicletta[i];
     }
 
 }
-const bike { nome, peso }
+const { nome, peso } = biciclettaMin;
 
-console.log(pesoMin);
+document.getElementById('container').innerHTML =
+    `<ul>
+<li>Nome : ${nome}</li>
+<li>Peso : ${peso}</li>
+</ul>`;
+
+console.log(biciclettaMin);
 
 
 
